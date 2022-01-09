@@ -392,4 +392,12 @@ dev.off()
 }
 
 
+####Session information#######
+sink("DES/DESeq2.session_info.txt")
+print("seed is 1234")
+sessionInfo()
+sink()
+
+
+
 
