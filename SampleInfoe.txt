@@ -1,7 +1,0 @@
-id,condition
-6_852-1_S9,6-852
-6_852-2_S10,6-852
-6_853-1_S11,6-853
-6_853-2_S12,6-853
-Control_1-Lymphobalst_S7,Control
-Control_2-Lymphoblast_S8,Control
