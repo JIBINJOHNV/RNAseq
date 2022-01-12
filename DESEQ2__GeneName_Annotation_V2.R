@@ -10,8 +10,8 @@ suppressMessages(library(affy))
 suppressMessages(library(RColorBrewer))
 suppressMessages(library(genefilter ))
 suppressMessages(library(dplyr))
-suppressMessages(library("stringr"))    # Load stringr
-library(dplyr)
+suppressMessages(library(stringr))
+suppressMessages(library(library(dplyr))
 
 parser <- ArgumentParser()
 
