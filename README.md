@@ -1,6 +1,7 @@
 # RNAseq
 
 Instead of gene id gene name in heatmap
+
 gene annotation incorpoated in the deseq otput
 
 Command to run the script
