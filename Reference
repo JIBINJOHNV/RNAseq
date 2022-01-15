@@ -1,5 +1,36 @@
+##RNA seq
+1) https://bioinformatics-core-shared-training.github.io/RNAseq-R/
+2) https://combine-australia.github.io/RNAseq-R/06-rnaseq-day1.html
+3) https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.html
+4) https://girke.bioinformatics.ucr.edu/GEN242/tutorials/sprnaseq/sprnaseq/
+5) https://pubmed.ncbi.nlm.nih.gov/34019643/
 
-#GO analysis
+
+##DE ANALYSIS
+#Software
+1)Super-delta2 : https://www.biorxiv.org/content/10.1101/2021.01.30.428977v1.full
+2)edgeR : https://bioconductor.org/packages/release/bioc/html/edgeR.html
+3)EBSeq : https://bioconductor.org/packages/release/bioc/html/EBSeq.html
+4)NOISeq : https://bioconductor.org/packages/release/bioc/html/NOISeq.html
+5)limma : https://bioconductor.org/packages/release/bioc/html/limma.html
+6)DEXSeq : https://bioconductor.org/packages/release/bioc/html/DEXSeq.html ; differential exon usage using RNA-seq exon counts 
+7)SplicingCompass : https://github.com/KoenigLabNM/SplicingCompass ; differential splicing detection using RNA-Seq data.
+
+#Tutorials
+1)https://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/limmaWorkflow.html ; limma, Glimma and edgeR
+2)http://www.nathalievialaneix.eu/doc/html/solution_edgeR-tomato-withcode.html ; edgeR
+3)https://academic.oup.com/bib/article/20/2/471/4524048?login=true ;EBSeq, DESeq2, NOISeq, SplicingCompass, Limma, DEXSeq and Cuffdiff2
+
+#Web based
+1)Shiny-Seq :https://github.com/szenitha/Shiny-Seq
+2)iDEP : http://bioinformatics.sdstate.edu/idep94/
+3)iDEP-READS: http://bioinformatics.sdstate.edu/reads/ ; public data 
+4)ShinyGO : http://bioinformatics.sdstate.edu/go/ ; Enrichment analysis
+
+
+
+#################------------------------------------------------------------------------------
+##GO analysis
 1) https://biit.cs.ut.ee/gprofiler/page/citing
 2) https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.html
 3) https://wencke.github.io/
@@ -8,10 +39,3 @@
 6) https://github.com/iDEP-SDSU/idep
 7) https://bioinformatics-core-shared-training.github.io/RNAseq-R/
 8) https://combine-australia.github.io/RNAseq-R/06-rnaseq-day1.html
-
-
-#RNA seq
-1) https://bioinformatics-core-shared-training.github.io/RNAseq-R/
-2) https://combine-australia.github.io/RNAseq-R/06-rnaseq-day1.html
-3) https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.html
-4) https://girke.bioinformatics.ucr.edu/GEN242/tutorials/sprnaseq/sprnaseq/
