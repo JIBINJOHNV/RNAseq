@@ -1,7 +1,7 @@
 # RNAseq
 #Create STAR INDEX
- python Create_STAR_INdex.py -NumberOfThreads 5 -genomeDir DenomeDirPath/ -gtf Rattus_norvegicus.mRatBN7.2.105.gtf -fasta Rattus_norvegicus.mRatBN7.2.dna_sm.toplevel.fa -Re
-adLength 100
+
+python Create_STAR_INdex.py -NumberOfThreads 5 -genomeDir DenomeDirPath/ -gtf Rattus_norvegicus.mRatBN7.2.105.gtf -fasta Rattus_norvegicus.mRatBN7.2.dna_sm.toplevel.fa -ReadLength 100
 
 
 
