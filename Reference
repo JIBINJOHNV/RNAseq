@@ -39,3 +39,7 @@
 6) https://github.com/iDEP-SDSU/idep
 7) https://bioinformatics-core-shared-training.github.io/RNAseq-R/
 8) https://combine-australia.github.io/RNAseq-R/06-rnaseq-day1.html
+9) goseq: https://bioconductor.org/packages/release/bioc/html/goseq.html
+10) goProfiles: https://www.bioconductor.org/packages/release/bioc/html/goProfiles.html
+11) clusterProfiler: https://www.bioconductor.org/packages/release/bioc/html/clusterProfiler.html
+
