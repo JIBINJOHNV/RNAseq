@@ -20,6 +20,9 @@
 1)https://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/limmaWorkflow.html ; limma, Glimma and edgeR
 2)http://www.nathalievialaneix.eu/doc/html/solution_edgeR-tomato-withcode.html ; edgeR
 3)https://academic.oup.com/bib/article/20/2/471/4524048?login=true ;EBSeq, DESeq2, NOISeq, SplicingCompass, Limma, DEXSeq and Cuffdiff2
+4)https://hbctraining.github.io/Intro-to-rnaseq-hpc-O2/lessons/03_alignment.html ;https://github.com/orgs/hbctraining/repositories
+5)https://biocorecrg.github.io/courses
+
 
 #Web based
 1)Shiny-Seq :https://github.com/szenitha/Shiny-Seq
