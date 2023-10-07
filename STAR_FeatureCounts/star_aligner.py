@@ -3,7 +3,11 @@ import os
 sample_names=["sample1","sample2","sample3","sample4","sample5" ]
 
 fasta_file="Pathto_fasta_file"
-star_index="path_to_star_index"
+
+fastq_path="/data/amrendra/Analysis/Cleanedfastqfiles/GSE126848/Fastp/" #47 samplesa single end, 75bp
+fastq_path="/data/amrendra/Analysis/Cleanedfastqfiles/GSE135251/Fastp/"  ## 400 samples paired end
+star_index="/data/amrendra/reference/TCGA/star-2.7.5c_GRCh38.d1.vd1_gencode.v36_75bp/"
+star_index="/data/amrendra/reference/TCGA/star-2.7.5c_GRCh38.d1.vd1_gencode.v36/" ##for 100bp  downloadeed from tcga
 
 for sample_name in sample_names:
     os.system(f'''STAR
