@@ -1,18 +1,32 @@
+vi GSE135251_Part_200_216_Star_alignment.py
+
+
+
+nohup python3 GSE135251_Part_200_216_Star_alignment.py 2>&1 > GSE135251_Part_200_216_Star_alignment.out &
+
+
 import os
+import glob
 
-sample_names=["sample1","sample2","sample3","sample4","sample5" ]
+#fastq_path="/data/amrendra/Analysis/Cleanedfastqfiles/GSE126848/Fastp/" #47 samplesa single end, 75bp
+#star_index="/data/amrendra/reference/TCGA/star-2.7.5c_GRCh38.d1.vd1_gencode.v36_75bp/"
 
-fasta_file="Pathto_fasta_file"
+fastq_path="/data/amrendra/Analysis/Cleanedfastqfiles/GSE135251/Fastp/" #
+star_index="/data/amrendra/reference/TCGA/star-2.7.5c_GRCh38.d1.vd1_gencode.v36/"
 
-fastq_path="/data/amrendra/Analysis/Cleanedfastqfiles/GSE126848/Fastp/" #47 samplesa single end, 75bp
-fastq_path="/data/amrendra/Analysis/Cleanedfastqfiles/GSE135251/Fastp/"  ## 400 samples paired end
-star_index="/data/amrendra/reference/TCGA/star-2.7.5c_GRCh38.d1.vd1_gencode.v36_75bp/"
-star_index="/data/amrendra/reference/TCGA/star-2.7.5c_GRCh38.d1.vd1_gencode.v36/" ##for 100bp  downloadeed from tcga
 
-for sample_name in sample_names:
-    os.system(f'''STAR
-        --readFilesIn {sample_name}.fastp.R1.gz {sample_name}.fastp.R1.gz \
-        --outSAMattrRGline "ID:your_rg_id SM:{sample_name} PL:illumina LB:Lib1" \
+sample_list=glob.glob(f'{fastq_path}*')
+
+sample_names=[x.split("/")[-1].split("_")[0] for x in sample_list ]
+sample_names=list(set(sample_names))
+sample_names=sorted(sample_names)
+
+n=1
+for sample_name in sample_names[200:]:
+    print(f' Now {n}th  {sample_name} is running \n\n')
+    os.system(f'''/home/amrendra/software/STAR-2.7.11a/bin/Linux_x86_64/STAR \
+        --readFilesIn {fastq_path}{sample_name}_fastp_R1.gz  {fastq_path}{sample_name}_fastp_R2.gz  \
+        --outSAMattrRGline "ID:{sample_name} SM:{sample_name} PL:illumina LB:Lib1 DS:GSE126848" \
         --genomeDir {star_index} \
         --readFilesCommand zcat \
         --runThreadN 15 \
@@ -29,7 +43,7 @@ for sample_name in sample_names:
         --outFilterScoreMinOverLread 0.33 \
         --outFilterMatchNminOverLread 0.33 \
         --limitSjdbInsertNsj 1200000 \
-        --outFileNamePrefix {sample_name} \
+        --outFileNamePrefix {sample_name}_ \
         --outSAMstrandField intronMotif \
         --outFilterIntronMotifs None \
         --alignSoftClipAtReferenceEnds Yes \
@@ -41,6 +55,6 @@ for sample_name in sample_names:
         --chimJunctionOverhangMin 15 \
         --chimOutType Junctions SeparateSAMold WithinBAM SoftClip \
         --chimOutJunctionFormat 1 \
-        --chimMainSegmentMultNmax 1 \
-        --outSAMattributes NH HI AS nM NM ch''')
-
+        --chimMainSegmentMultNmax 1 ''')
+    n=n+1
+        
