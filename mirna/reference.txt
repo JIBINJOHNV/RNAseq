@@ -21,4 +21,7 @@ mirdeep2      :https://github.com/rajewsky-lab/mirdeep2
 ##Enrichment analysis
 miRPathv4:  http://62.217.122.229/app/miRPathv4
 
+#Tutorials
+https://nbisweden.github.io/workshop-RNAseq/2011/lab_smallrna.html ;https://nbisweden.github.io/workshop-RNAseq/2011/home_content.html
+
 
