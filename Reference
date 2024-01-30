@@ -9,7 +9,6 @@ ExpressAnalyst:         https://www.expressanalyst.ca/ExpressAnalyst/home.xhtml
 4) https://girke.bioinformatics.ucr.edu/GEN242/tutorials/sprnaseq/sprnaseq/
 5) https://pubmed.ncbi.nlm.nih.gov/34019643/
 
-
 ##DE ANALYSIS
 #Software
 1)Super-delta2 : https://www.biorxiv.org/content/10.1101/2021.01.30.428977v1.full
@@ -26,7 +25,7 @@ ExpressAnalyst:         https://www.expressanalyst.ca/ExpressAnalyst/home.xhtml
 3)https://academic.oup.com/bib/article/20/2/471/4524048?login=true ;EBSeq, DESeq2, NOISeq, SplicingCompass, Limma, DEXSeq and Cuffdiff2
 4)https://hbctraining.github.io/Intro-to-rnaseq-hpc-O2/lessons/03_alignment.html ;https://github.com/orgs/hbctraining/repositories
 5)https://biocorecrg.github.io/courses
-
+6)https://github.com/CebolaLab/RNA-seq?tab=readme-ov-file#post-alignment-qc
 
 #Web based
 1)Shiny-Seq :https://github.com/szenitha/Shiny-Seq
@@ -34,6 +33,10 @@ ExpressAnalyst:         https://www.expressanalyst.ca/ExpressAnalyst/home.xhtml
 3)iDEP-READS: http://bioinformatics.sdstate.edu/reads/ ; public data 
 4)ShinyGO : http://bioinformatics.sdstate.edu/go/ ; Enrichment analysis
 
+##RNAseq QC
+1)RSeQC           :https://rseqc.sourceforge.net/#
+2)RNA-QC-Chain    :http://bioinfo.single-cell.cn/rna-qc-chain.html
+3)RNA-SeQC        :https://github.com/getzlab/rnaseqc
 
 
 #################------------------------------------------------------------------------------
